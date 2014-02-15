@@ -1,0 +1,25 @@
+html {
+  height: 5000px;
+}
+
+body {
+/*  font-family: 'Source Sans Pro', sans-serif; */
+  background-color: #ff949d;
+  height: 100%;
+}
+
+.container{
+	height: 100%;
+}
+
+#walk-container	{
+	width: 200px;
+	position: fixed;
+	left: 20px;
+	bottom: 10px;
+}
+
+#walk-container img {
+	width: 200px;
+	height: auto;
+}
