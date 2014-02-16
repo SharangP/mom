@@ -20,19 +20,49 @@
   	<div class="container">
   		<span id="top"></span>
   		<div id="walk-container">
-  			<img class="frame" src="walk/walk1.jpg" data-anchor-start="0" data-anchor-stop="60" style="display: block;">
-  			<img class="frame" src="walk/walk2.jpg" data-anchor-start="60" data-anchor-stop="120" style="display: none;">
-  			<img class="frame" src="walk/walk3.jpg" data-anchor-start="120" data-anchor-stop="180" style="display: none;">
-  			<img class="frame" src="walk/walk4.jpg" data-anchor-start="180" data-anchor-stop="240" style="display: none;">
-  			<img class="frame" src="walk/walk5.jpg" data-anchor-start="240" data-anchor-stop="300" style="display: none;">
-  			<img class="frame" src="walk/walk6.jpg" data-anchor-start="300" data-anchor-stop="360" style="display: none;">
-  			<img class="frame" src="walk/walk7.jpg" data-anchor-start="360" data-anchor-stop="420" style="display: none;">
-  			<img class="frame" src="walk/walk8.jpg" data-anchor-start="420" data-anchor-stop="480" style="display: none;">
-  			<img class="frame" src="walk/walk9.jpg" data-anchor-start="480" data-anchor-stop="540" style="display: none;">
-  			<img class="frame" src="walk/walk10.jpg" data-anchor-start="540" data-anchor-stop="600" style="display: none;">
-  			<img class="frame" src="walk/walk11.jpg" data-anchor-start="600" data-anchor-stop="660" style="display: none;">
-  			<img class="frame" src="walk/walk12.jpg" data-anchor-start="660" data-anchor-stop="720" style="display: none;">
+  			<img class="walk-frame" src="walk/walk1.jpg" data-anchor-start="0" data-anchor-stop="60" style="display: block;">
+  			<img class="walk-frame" src="walk/walk2.jpg" data-anchor-start="60" data-anchor-stop="120" style="display: none;">
+  			<img class="walk-frame" src="walk/walk3.jpg" data-anchor-start="120" data-anchor-stop="180" style="display: none;">
+  			<img class="walk-frame" src="walk/walk4.jpg" data-anchor-start="180" data-anchor-stop="240" style="display: none;">
+  			<img class="walk-frame" src="walk/walk5.jpg" data-anchor-start="240" data-anchor-stop="300" style="display: none;">
+  			<img class="walk-frame" src="walk/walk6.jpg" data-anchor-start="300" data-anchor-stop="360" style="display: none;">
+  			<img class="walk-frame" src="walk/walk7.jpg" data-anchor-start="360" data-anchor-stop="420" style="display: none;">
+  			<img class="walk-frame" src="walk/walk8.jpg" data-anchor-start="420" data-anchor-stop="480" style="display: none;">
+  			<img class="walk-frame" src="walk/walk9.jpg" data-anchor-start="480" data-anchor-stop="540" style="display: none;">
+  			<img class="walk-frame" src="walk/walk10.jpg" data-anchor-start="540" data-anchor-stop="600" style="display: none;">
+  			<img class="walk-frame" src="walk/walk11.jpg" data-anchor-start="600" data-anchor-stop="660" style="display: none;">
+  			<img class="walk-frame" src="walk/walk12.jpg" data-anchor-start="660" data-anchor-stop="720" style="display: none;">
   	</div>
+
+  	<div id="photo-container">
+  		<div class="fancy-photo">
+  			<div class="object">
+  				<div class="frame">
+  					<div class="canvas">
+  						<img src="pics/yosemite2.jpg">
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="fancy-photo">
+  			<div class="object">
+  				<div class="frame">
+  					<div class="canvas">
+  						<img src="pics/yosemite2.jpg">
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="fancy-photo">
+  			<div class="object">
+  				<div class="frame">
+  					<div class="canvas">
+  						<img src="pics/yosemite2.jpg">
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+	</div>
 
     <!-- Le javascript
     ================================================== -->
@@ -44,8 +74,7 @@
           var pos = $('#walk-container').offset();
           var mpos = pos.top % 720;
 
-          $('.frame').each(function () {
-          		// alert($(this)[0]);
+          $('.walk-frame').each(function () {
               if (mpos >= $(this).attr('data-anchor-start') && mpos < $(this).attr('data-anchor-stop')) {
                   $(this)[0].style.display = 'block';
               }
