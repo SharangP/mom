@@ -1,40 +1,60 @@
 html {
-  height: 5000px;
+	height: 16500px;
 }
 
 body {
-/*  font-family: 'Source Sans Pro', sans-serif; */
-  background-color: #ff949d;
-  height: 100%;
+	font-family: 'Allura', cursive, sans-serif;
+	background-color: #ff949d;
+	height: 100%;
 }
 
 .container{
 	height: 100%;
 }
 
+#top {
+	top: 0;
+}
+
 #walk-container	{
-	width: 150px;
+	width: 125px;
 	position: fixed;
-	left: 20px;
+	left: 0;
 	bottom: 10px;
 }
 
 #walk-container img {
-	width: 150px;
+	width: 125px;
 	height: auto;
 }
 
 #photo-container {
-	padding: 5px 0 0 300px;
+	width: 14000px;
+	height: 450px;
+	position: fixed;
+}
+
+.title-container {
+	width: 1100px;
+	padding: 75px 50px 50px 550px;
+	position: relative;
 	display: inline-block;
+	float: left;
+}
+
+.title {
+	font-size: 72pt;
+	line-height: 200px;
+}
+
+.subtitle {
+	font-size: 28pt;
 }
 
 .fancy-photo {
-	height: 100px;
-	width: auto;
 	float:left;
 	margin:30px 0px;
-	margin-right:2%;
+	margin-right: 50px;
 	padding-top:40px;
 	background:url(http://tomasdostal.com/wp-content/themes/brainstorm/images/fancy-picture/hanger.png) no-repeat top center;
 }
@@ -60,10 +80,20 @@ body {
 }
 
 .fancy-photo img {
-	width:99%;
+	/*width:99%;*/
 	padding:0 !important;
 	margin:0 !important;
 	border:1px solid #958879 !important;
 	border-radius:2px;
 	box-shadow: 0px 0px 1px #ADA293;
+}
+
+.horizontal img {
+	height: 300px;
+	width: auto;
+}
+
+.vertical img {
+	height: 350px;
+	width: auto;
 }
